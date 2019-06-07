@@ -125,7 +125,7 @@ export default class App extends React.Component {
         "peso": this.state.peso
       })
     });
-
+    this.setState({primeiroCadastro: false});
     //console.warn("o nome é: " + this.state.nome + " e o peso é: " + this.state.peso);
   };
 
