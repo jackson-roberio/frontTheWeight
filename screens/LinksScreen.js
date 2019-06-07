@@ -27,7 +27,7 @@ export default class LinksScreen extends React.Component {
 
 
     return (
-      <FlatList style={styles.container} keyExtractor={item => item.id} data={this.state.mudancas}
+      <FlatList style={styles.container} keyExtractor = { (item, index) => index.toString() } data={this.state.mudancas}
           renderItem={ ({item}) => 
             
             <View id={item.id} style={styles.conteudoLista}>
